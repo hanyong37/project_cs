@@ -42,8 +42,21 @@
 				line-height: 24px;
 			}
 			
+			title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			
 			input {
 				color: #000;
+				height: 30px;
+			}
+			
+			.app-cs-time {
+				font-size: small;
+				padding: 0px;
 			}
 		</style>
 	</head>
@@ -57,12 +70,13 @@
 						你好，林青霞！</div>
 					<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
 						<li class="mui-table-view-cell">
-							<a class="mui-navigate-right mui-icon mui-icon-person" style="font-size: large;">
+							<a class="mui-navigate-right mui-icon mui-icon-person" style="font-size: medium;">
 								会员信息
 							</a>
 						</li>
+
 						<li class="mui-table-view-cell">
-							<a class="mui-navigate-right  mui-icon mui-icon-list" style="font-size: large;">
+							<a class="mui-navigate-right  mui-icon mui-icon-list" style="font-size: medium;">
 								我的课程
 							</a>
 						</li>
@@ -79,52 +93,128 @@
 					<a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
 					<h1 class="mui-title">Common Strength</h1>
 				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon mui-icon-list"></span>
+						<span class="mui-tab-label">课程预约</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-contact">
+						<span class="mui-icon mui-icon-flag"></span>
+						<span class="mui-tab-label">我的课程</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-map">
+						<span class="mui-icon mui-icon-person"></span>
+						<span class="mui-tab-label">个人信息</span>
+					</a>
+				</nav>
 
 				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
-
-						<div class="mui-row">
-
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell">
-									<div class="mui-row">
-										<div class="mui-col-sm-3 mui-col-xs-3" align="right">
-											<a class="mui-icon mui-icon-arrowleft"></a>
-										</div>
-										<div class="mui-col-sm-3 mui-col-xs-3" align="center"> 8/15 周二</div>
-										<div class="mui-col-sm-3 mui-col-xs-3" align="left">
-											<a class="mui-icon mui-icon-arrowright"> </a>
-										</div>
-										<div class="mui-col-sm-3 mui-col-xs-3" align="right"> 共5节课</div>
+					<div class="mui-row">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-2" align="right">
+										<button type="button" class="mui-btn mui-icon mui-icon-arrowleft" />
 									</div>
-								</li>
+									<div class="mui-col-sm-3 mui-col-xs-4" align="center"> 8/15 周二</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<button type="button" class="mui-btn mui-icon mui-icon-arrowright" />
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right"> 共5节课</div>
+								</div>
+							</li>
 
-								<li class="mui-table-view-cell">
-									<span style="font-size: small;"> 7:30 ~ 8:30 </span> Item 1 <span class="mui-badge mui-badge-primary">14</span></li>
-								<li class="mui-table-view-cell">Item 2 <span class="mui-badge mui-badge-success">1/6</span></li>
-								<li class="mui-table-view-cell">Item 3 <span class="mui-badge">5</span></li>
-								<li class="mui-table-view-divider">右侧有导航箭头</li>
-								<li class="mui-table-view-cell">
-									<a class="mui-navigate-right">
-										<span class="mui-badge mui-badge-danger">15</span> Item 1
-									</a>
-								</li>
-								<li class="mui-table-view-cell">
-									<a class="mui-navigate-right">
-										<span class="mui-badge mui-badge-purple">5</span> Item 2
-									</a>
-								</li>
-								<li class="mui-table-view-cell">
-									<a class="mui-navigate-right">
-										<span class="mui-badge mui-badge-warning">5</span> Item 3
-									</a>
-								</li>
-							</ul>
-						</div>
+							<li class="mui-table-view-cell">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<span class="app-cs-time">07:30 08:30 </span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-6" align="center"> 下肢蹲／训练</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right">
+										<span class="mui-badge mui-badge-green">3 / 5</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell" style="vertical-align: middle;line-height: 1;">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<span class="app-cs-time">07:30 08:30 </span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-6" align="center"> 下肢蹲／训练</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right">
+										<span class="mui-badge mui-badge-green">3 / 5</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell" style="vertical-align: middle;line-height: 1;">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<span class="app-cs-time">07:30 08:30 </span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-6" align="center"> 下肢蹲／训练</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right">
+										<span class="mui-badge mui-badge-red">5 / 5</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell" style="vertical-align: middle;line-height: 1;">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<span class="app-cs-time">07:30 08:30 </span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-6" align="center"> 下肢蹲／训练</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right">
+										<span class="mui-badge mui-badge-yellow">4 / 5</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell" style="vertical-align: middle;line-height: 1;">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<span class="app-cs-time">07:30 08:30 </span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-6" align="center"> 下肢蹲／训练</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right">
+										<span class="mui-badge mui-badge-green">3 / 5</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell" style="vertical-align: middle;line-height: 1;">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<span class="app-cs-time">07:30 08:30 </span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-6" align="center"> 下肢蹲／训练</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right">
+										<span class="mui-badge mui-badge-green">3 / 5</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell" style="vertical-align: middle;line-height: 1;">
+								<div class="mui-row">
+									<div class="mui-col-sm-3 mui-col-xs-3" align="left">
+										<span class="app-cs-time">07:30 08:30 </span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-6" align="center"> 下肢蹲／训练</div>
+									<div class="mui-col-sm-3 mui-col-xs-3" align="right">
+										<span class="mui-badge mui-badge-green">3 / 5</span>
+									</div>
+								</div>
+							</li>
+
+						</ul>
 					</div>
 				</div>
-				<!-- off-canvas backdrop -->
-				<div class="mui-off-canvas-backdrop"> asdfasdf </div>
 			</div>
+			<!-- off-canvas backdrop -->
+			<div class="mui-off-canvas-backdrop"> asdfasdf </div>
+		</div>
 		</div>
 		<script src="./js/mui.min.js"></script>
 		<script>
